@@ -27,7 +27,8 @@ class ItemListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
-        loadData()        
+        loadData()
+
     }
     
     func loadData() {
@@ -97,24 +98,76 @@ class ItemListViewController: UIViewController {
     }
     
     
-    @IBAction func handleGesture(_ sender: UILongPressGestureRecognizer) {
-        if sender.state == .began
+//    @IBAction func handleGesture(sender: UILongPressGestureRecognizer) {
+//
+//        if sender.state == UIGestureRecognizer.State.began {
+//            let touchPoint = sender.location(in: tableView)
+//            if let indexPath = tableView.indexPathForRow(at: touchPoint) {
+//                let alertController = UIAlertController(title: nil, message:
+//                    "Open Product in Safari", preferredStyle: .alert)
+//                let itemSku = self.itemArray[indexPath.row ?? 0].sku
+//                alertController.addAction(UIAlertAction(title: "Go to Safari", style: .default,handler: { action in
+//                    UIApplication.shared.open(URL(string: "\(itemURL)\(itemSku ?? "")") ?? URL(string: "")!, options: [:]) { _ in
+//                        print("Link opened")
+//                    }
+//                }))
+//                print("Long press Pressed:)")
+//            }
+//        }
+//
+//
+//    }
+    
+//
+//    @IBAction func handleGesture(sender: UILongPressGestureRecognizer){
+//        if UILongPressGestureRecognizer.state == UILongPressGestureRecognizer.State.Began {
+//             let touchPoint = UILongPressGestureRecognizer.locationInView(tableView)
+//             if let indexPath = tableView.indexPathForRowAtPoint(touchPoint) {
+//            // your code here, get the row for the indexPath or do whatever you want
+//             }
+//        }
+//    }
+    
+    @IBAction func handleGesture(_ recognizer: UILongPressGestureRecognizer) {
+        if recognizer.state == .changed
         {
             let alertController = UIAlertController(title: nil, message:
                 "Open Product in Safari", preferredStyle: .alert)
             let indexPath = tableView.indexPathForSelectedRow
             let itemSku = self.itemArray[indexPath?.row ?? 0].sku
-            alertController.addAction(UIAlertAction(title: "Go to Safari", style: .default,handler: { action in
+            alertController.addAction(UIAlertAction(title: "Go to StockX", style: .default,handler: { action in
                 UIApplication.shared.open(URL(string: "\(itemURL)\(itemSku ?? "")") ?? URL(string: "")!, options: [:]) { _ in
                 print("Link opened")
             }
         }))
-        
+
         present(alertController, animated: true, completion: nil)
     }
-}
 
 }
+    
+//    @IBAction func handleGesture(_ sender: UITapGestureRecognizer)  {
+//        if sender.state == UIGestureRecognizer.State.began {
+//            let tapLocation = sender.location(in: self.tableView)
+//            if let tapIndexPath = self.tableView.indexPathForRow(at: tapLocation) {
+//                if self.tableView.cellForRow(at: tapIndexPath) != nil {
+//                    let alertController = UIAlertController(title: nil, message:
+//                        "Open Product in StockX", preferredStyle: .alert)
+//                    let indexPath = tableView.indexPathForSelectedRow
+//                    let itemSku = self.itemArray[indexPath?.row ?? 0].sku
+//                    alertController.addAction(UIAlertAction(title: "Go to Safari", style: .default,handler: { action in
+//                        UIApplication.shared.open(URL(string: "\(itemURL)\(itemSku ?? "")") ?? URL(string: "")!, options: [:]) { _ in
+//                            print("Link opened")
+//                        }
+//                    }))
+//
+//                }
+//            }
+//        }
+//    }
+    
+}
+
 
 extension ItemListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

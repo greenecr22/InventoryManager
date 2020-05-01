@@ -16,7 +16,6 @@
 		EA2C1916245388E600473AA8 /* ItemDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C1915245388E500473AA8 /* ItemDetailTableViewController.swift */; };
 		EA2C19182454B75000473AA8 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C19172454B75000473AA8 /* Items.swift */; };
 		EA9790E724552128001032A9 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9790E624552128001032A9 /* StatisticsViewController.swift */; };
-		EA9790E924562BD6001032A9 /* DataCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9790E824562BD6001032A9 /* DataCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		EA2C1915245388E500473AA8 /* ItemDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailTableViewController.swift; sourceTree = "<group>"; };
 		EA2C19172454B75000473AA8 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		EA9790E624552128001032A9 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
-		EA9790E824562BD6001032A9 /* DataCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +68,6 @@
 				EA2C19052453776400473AA8 /* ItemListViewController.swift */,
 				EA2C1915245388E500473AA8 /* ItemDetailTableViewController.swift */,
 				EA9790E624552128001032A9 /* StatisticsViewController.swift */,
-				EA9790E824562BD6001032A9 /* DataCollection.swift */,
 				EA2C19072453776400473AA8 /* Main.storyboard */,
 				EA2C190A2453777200473AA8 /* Assets.xcassets */,
 				EA2C190C2453777200473AA8 /* LaunchScreen.storyboard */,
@@ -156,7 +153,6 @@
 				EA2C19042453776400473AA8 /* SceneDelegate.swift in Sources */,
 				EA2C1916245388E600473AA8 /* ItemDetailTableViewController.swift in Sources */,
 				EA9790E724552128001032A9 /* StatisticsViewController.swift in Sources */,
-				EA9790E924562BD6001032A9 /* DataCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

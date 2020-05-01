@@ -29,7 +29,7 @@
                                         <color key="backgroundColor" red="0.54643793019999998" green="0.88673857869999995" blue="0.73811503749999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="YMx-6l-XYj" appends="YES" id="9EE-vZ-Ufa"/>
+                                            <outletCollection property="gestureRecognizers" destination="jXN-qd-WDR" appends="YES" id="m3p-pk-Tg4"/>
                                             <segue destination="d6h-Ag-keF" kind="show" identifier="ShowDetail" id="R5h-w5-Q8V"/>
                                         </connections>
                                     </tableViewCell>
@@ -39,7 +39,6 @@
                                 <rect key="frame" x="0.0" y="816" width="414" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <items>
-                                    <barButtonItem title="About" id="MNt-Jk-H1G"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="t1J-iP-ix1"/>
                                     <barButtonItem title="Statistics" id="RIu-tb-eYY">
                                         <connections>
@@ -94,9 +93,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="YMx-6l-XYj">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="jXN-qd-WDR">
                     <connections>
-                        <action selector="handleGesture:" destination="BYZ-38-t0r" id="tKw-X9-wgL"/>
+                        <action selector="handleGesture:" destination="BYZ-38-t0r" id="AKO-bZ-EMg"/>
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
@@ -112,7 +111,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inventory Statistics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXx-uh-lWO">
                                 <rect key="frame" x="24" y="88" width="367" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -407,21 +406,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8X-G2-l8f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="101.78571428571428"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="rlW-7P-syf">
-            <objects>
-                <viewController id="zvF-p0-wm9" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="y16-lW-bff">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="s7H-sd-bZN"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kt9-ec-CHu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1042" y="-717"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vi9-R1-czD">
